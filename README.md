@@ -10,10 +10,10 @@
 - dagger : 2.16
 - net.ltgt.apt : 0.15
 
-
 ## Usage
 
 1. ./gradlew eclipse
+1. ./gradlew build
 1. CoffeeApp を 実行
 1. 実行結果
 ```
