@@ -1,0 +1,24 @@
+buildscript {
+  repositories {
+    maven {
+      url "https://plugins.gradle.org/m2/"
+    }
+  }
+  dependencies {
+    classpath "net.ltgt.gradle:gradle-apt-plugin:0.15"
+  }
+}
+
+apply plugin: "net.ltgt.apt"
+apply plugin: "net.ltgt.apt-eclipse"
+apply plugin: 'java-library'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    // dagger2
+    compile group: 'com.google.dagger', name: 'dagger', version: '2.16'
+    annotationProcessor group: 'com.google.dagger', name: 'dagger-compiler', version: '2.16'
+}
