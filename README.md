@@ -21,3 +21,7 @@
 => => pumping => =>
  [_]P coffee! [_]P 
 ```
+
+変更した場合は、  
+プロジェクト右クリック.Gradle.Refresh Gradle Project で  
+.apt_generated が更新される
